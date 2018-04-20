@@ -12,7 +12,13 @@ public class ArenaController {
 
     ContestantController hungerGames = new ContestantController();
 
+    //methods
+    //let the contestants be able to fight
+    //make an if else statement
+    //let the player with the highest attack win
+    //print out corresponding text
     public void fightContestant(){
+        System.out.println("Let the games begin!");
         if (hungerGames.playerCareer19.getAttack() > hungerGames.playerCareer21.getAttack()) {
             hungerGames.playerCareer21.isDead();
             hungerGames.playerCareer19.isLiving();

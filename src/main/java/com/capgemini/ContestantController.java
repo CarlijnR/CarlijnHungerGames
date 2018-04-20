@@ -28,16 +28,21 @@ public class ContestantController {
     Contestant playerCareer24 = new Career(24,true,100,Gender.female, 98,58,78);
 
 
-    //Make a list for all the District players
-    //Preferably create the players with a for loop
-    Contestant[] playersDistrict = new District[18];
-    //
+    //Make a list for all the the players
+    Contestant[] allContestants = {
+       playerDistrict1, playerDistrict2, playerDistract3, playerDistrict4, playerDistract5, playerDistrict6, playerDistract7, playerDistrict8, playerDistract9, playerDistract10, playerDistract11,
+            playerDistract11, playerDistract12, playerDistract13, playerDistract14, playerDistract15, playerDistract16, playerDistract17, playerDistract17, playerDistract18, playerCareer19,
+            playerCareer20, playerCareer21, playerCareer22, playerCareer23, playerCareer24
+    };
 
-    //Make a list for all the Career players
-    Contestant[] playersCareer = new Career [6];
-    //
+    public void printContestants() {
+        System.out.println("The contestants participating are:");
+        for (int i = 0; i < allContestants.length; i++) {
+            System.out.println(allContestants[i].getPlayerId());
+        }
+    }
 
-    //Create a method where all the District players are created
+    //Create a method where all the District players are created, when completed do the same for Career
 //    public void createDistrict(Contestant[] playersDistrict) {
 //        for (int i = 0; i < playersDistrict.length; i++);
 //        .add();
