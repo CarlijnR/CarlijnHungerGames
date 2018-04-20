@@ -21,6 +21,7 @@ public abstract class Contestant {
     }
 
     //methods
+    //methods so that a player can be dead (and lose) or alive (and win)
     public void isDead() {
         isAlive = false;
         System.out.println("The player " + this.getPlayerId() + " is dead. Game over.");
