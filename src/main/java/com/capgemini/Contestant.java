@@ -1,11 +1,11 @@
 package com.capgemini;
 
-public class Contestant {
+public abstract class Contestant {
 
     //attributes
     private int playerId;
     private boolean isAlive;
-    private int health = 100;
+    private int health;
     private Gender gender;
     private int attack;
     private int defense;
@@ -21,19 +21,17 @@ public class Contestant {
     }
 
     //methods
-
     public void isDead() {
         isAlive = false;
         System.out.println("The player " + this.getPlayerId() + " is dead. Game over.");
     }
 
-    public void isLiving(){
+    public void isLiving() {
         isAlive = true;
         System.out.println("The player " + this.getPlayerId() + " is alive. Who will he/she kill next?");
     }
 
     //getters and setters
-
     public int getPlayerId() {
         return playerId;
     }

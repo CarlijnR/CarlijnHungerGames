@@ -1,5 +1,6 @@
 package com.capgemini;
 
+//Career is a sub class from Contestant
 public class Career extends Contestant {
 
     //attributes

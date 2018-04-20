@@ -1,6 +1,7 @@
 package com.capgemini;
 
-public class District extends Contestant{
+//District is a sub class from Contestant
+public class District extends Contestant {
 
     //attributes
     private int drive; //needs to be added to defense
