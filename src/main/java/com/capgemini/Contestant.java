@@ -21,23 +21,64 @@ public class Contestant {
     }
 
     //methods
-    //fight other contestant
 
-    /*public void fightContestant() {
-        if
-    }*/
-
-    //check if alive or dead - if else
-    public void isAlive() {
-        if (health < 0) {
-            isAlive = false;
-            System.out.println(Contestant.this.playerId + "has died during the fight");
-        } else {
-            isAlive = true;
-            System.out.println(Contestant.this.playerId + "is still alive");
-        }
+    public void isDead() {
+        isAlive = false;
+        System.out.println("The player " + this.getPlayerId() + " is dead. Game over.");
     }
 
+    public void isLiving(){
+        isAlive = true;
+        System.out.println("The player " + this.getPlayerId() + " is alive. Who will he/she kill next?");
+    }
 
     //getters and setters
+
+    public int getPlayerId() {
+        return playerId;
+    }
+
+    public void setPlayerId(int playerId) {
+        this.playerId = playerId;
+    }
+
+    public boolean isAlive() {
+        return isAlive;
+    }
+
+    public void setAlive(boolean alive) {
+        isAlive = alive;
+    }
+
+    public int getHealth() {
+        return health;
+    }
+
+    public void setHealth(int health) {
+        this.health = health;
+    }
+
+    public Gender getGender() {
+        return gender;
+    }
+
+    public void setGender(Gender gender) {
+        this.gender = gender;
+    }
+
+    public int getAttack() {
+        return attack;
+    }
+
+    public void setAttack(int attack) {
+        this.attack = attack;
+    }
+
+    public int getDefense() {
+        return defense;
+    }
+
+    public void setDefense(int defense) {
+        this.defense = defense;
+    }
 }

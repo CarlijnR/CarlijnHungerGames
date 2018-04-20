@@ -1,7 +1,7 @@
 package com.capgemini;
 
 public class ContestantController {
-    //Initiated all the playes
+    //Initiated all the players
     Contestant playerDistrict1 = new District(1, true,100,Gender.male, 100, 18, 2);
     Contestant playerDistrict2 = new District(2, true,100,Gender.male, 32, 18,12);
     Contestant playerDistract3 = new District(3,true,100,Gender.male,43,72,4);
@@ -26,6 +26,24 @@ public class ContestantController {
     Contestant playerCareer22 = new Career(22,true,100,Gender.female, 53,35,13);
     Contestant playerCareer23 = new Career(23,true,100,Gender.female, 24,22,5);
     Contestant playerCareer24 = new Career(24,true,100,Gender.female, 98,58,78);
+
+
+    //Make a list for all the District players
+    //Preferably create the players with a for loop
+    Contestant[] playersDistrict = new District[18];
+    //
+
+    //Make a list for all the Career players
+    Contestant[] playersCareer = new Career [6];
+    //
+
+    //Create a method where all the District players are created
+//    public void createDistrict(Contestant[] playersDistrict) {
+//        for (int i = 0; i < playersDistrict.length; i++);
+//        .add();
+//    }
+
+
 
 
 
